@@ -7,8 +7,9 @@ create table utilisateurs
     nom_user varchar(50),
     prenom_user varchar(50),
     mail_user varchar(50),
+    password varchar(100) not null,
     id_annonce int
-);
+)engine=InnoDB;
 
 create table droits
 (
