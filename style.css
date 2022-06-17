@@ -21,17 +21,17 @@ h2{
     text-align: center;
     padding-top: 30px;
     font-size: 2em;
-    position: relative;
+    /* position: relative; */
     margin-left: 15px;
 }
-h2::before{
+/* h2::before{
     content: "";
     position: absolute;
     background-color: #EAAC8B;
     width: 50px;
     height: 7px;
     bottom: 0;
-}
+} */
 a{
     text-decoration: none;
     color: black;
@@ -108,14 +108,15 @@ h3{
     align-items: center;
     width: 444px;
     height: 303px;
-    margin: 50px auto;
+    margin: 90px auto;
     text-align: center;
     background-color: #FFFFFF;
     padding: 12px;
     border-radius: 33px 33px 32px 33px;
     border: 27px solid rgba(211, 211, 211, 0.384);
 }
-p{
+.contain p{
+    margin: 2px 23%;
     align-items: center;
 }
 
@@ -131,19 +132,14 @@ h4{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.card img{
-    float: left;
-}
 .card{
     display: flex;
-
+    justify-content: flex-end;
     width: 400px;
     height: 200px;
-
     background-color: white;
     border-radius: 10px;
     border: 20px solid rgba(211, 211, 211, 0.384);
-
     margin: 10px;
     font-size: 0.8em;
 }
@@ -151,6 +147,22 @@ h4{
 opacity: 0.9;
 transform: scale(1.05);
 transition: 0.6s ease-in-out;
+}
+.card img{
+    background-size: cover;
+    background-position: center;
+    /* min-width: 350px; */
+    /* height: 500px; */
+    /* flex: 1; */
+    /* position: relative; */
+}
+.annonce_details{
+    /* position: absolute; */
+    align-self: flex-end;    
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffffdf;
+    padding: 5px 20px;
 }
 
 .btn{
@@ -161,50 +173,44 @@ transition: 0.6s ease-in-out;
     /* font-weight: bold; */
     color: #B56576;
     border-radius: 10px;
-    /* margin-top: 100px; */
     margin-right: 45px;
-    /* margin-bottom: 100px; */
+    margin-top: 15px;
     padding: 5px;
     border: none;
     float: right;
-    margin: 0px;
 }
 .btn:hover{
     transform: scale(1.1);
-    transition: 0.4s;
+    transition: 0.6s;
     /* background-color: #5957ba; */
     cursor: pointer;
 }
+.title-section{
+    margin-top: 200px;
+}
 
-/* input, textarea, button{
-    border: none;
-    width: 50%;
-    padding: 15px 10px;
-    margin: 1px 0;
-    font-size: 1em;
-    font-family: 'Poppins';
-    border-radius: 8px; */
 
 /* ********* CARITATIF ********* */
-/* .imgAssoc{
-    padding-top: 60px;
-    background: url(medias/assoc.jpg) no-repeat 50% 50%;
+.imgAssoc{
+    /* padding-top: 60px;
     background-size: cover;
     height: 799px; */
 }
+.plant3{
+    /* background-image: url(medias/assoc.jpg); */
 
-#caritatif{
-align-items: center;
+/* #caritatif{ */
+/* align-items: center;
 width: 777px;
 height: 606px;
 margin: 50px auto;
 text-align: center;
-/* background: url(medias/assoc.jpg); */
-/* font-weight: bold; */
+background-image: url(medias/assoc.jpg);
+/* font-weight: bold; 
 font-family: "Montserrat Alternates", sans-serif;
 padding: 12px;
 border-radius: 33px 33px 32px 33px;
-border: 27px solid rgba(211, 211, 211, 0.384);
+border: 27px solid rgba(211, 211, 211, 0.384); */
 }
 
 
@@ -236,10 +242,6 @@ form input, textarea, button{
 textarea{
     height: 100px;
 }
-/* button{
-    /* font-size: 1.5em; */
-    /* background: #9695ce;
-}*/
 button:hover{
     transform: scale(1.1);
     transition: 0.6s;
@@ -247,7 +249,7 @@ button:hover{
     background-color: #EAAC8B;
     cursor: pointer;
 } 
-#deuxTrait{
+#trait2{
     height: 1px;
     width: 75%;
     background-color: #F1E3D3;
@@ -275,5 +277,5 @@ span{
 }
 #icons a:hover{
     transform: scale(1.5);
-    transition: 0.1s;
+    transition: 0.6s;
 }
